@@ -5,7 +5,7 @@ pipeline {
             }
       }
     triggers {
-        cron('* * * * *')
+        poolSCM '* * * * *'
     }
     stages {
         stage('Build') {
