@@ -5,7 +5,7 @@ pipeline {
             }
       }
     triggers {
-        poolSCM '* * * * *'
+        poolSCM '*/5 * * * *'
     }
     stages {
         stage('Build') {
